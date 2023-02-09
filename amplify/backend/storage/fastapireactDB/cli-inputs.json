@@ -1,0 +1,14 @@
+{
+  "resourceName": "fastapireactDB",
+  "tableName": "fastapireactDB",
+  "partitionKey": {
+    "fieldName": "companyID",
+    "fieldType": "number"
+  },
+  "sortKey": {
+    "fieldName": "userID",
+    "fieldType": "number"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

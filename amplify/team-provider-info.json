@@ -1,0 +1,32 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify61741e305c964-staging-203731-authRole",
+      "UnauthRoleArn": "arn:aws:iam::539370044964:role/amplify-amplify61741e305c964-staging-203731-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::539370044964:role/amplify-amplify61741e305c964-staging-203731-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplify61741e305c964-staging-203731-deployment",
+      "UnauthRoleName": "amplify-amplify61741e305c964-staging-203731-unauthRole",
+      "StackName": "amplify-amplify61741e305c964-staging-203731",
+      "StackId": "arn:aws:cloudformation:us-east-2:539370044964:stack/amplify-amplify61741e305c964-staging-203731/695aa050-a7f0-11ed-a962-0a61774bb940",
+      "AmplifyAppId": "d1wvqt2twpsc7d"
+    },
+    "categories": {
+      "auth": {
+        "fastapireacttest": {}
+      },
+      "storage": {
+        "Test": {
+          "tableName": "Test",
+          "region": "us-east-2",
+          "arn": "arn:aws:dynamodb:us-east-2:539370044964:table/Test",
+          "partitionKeyName": "companyID",
+          "partitionKeyType": "N",
+          "sortKeyName": "userID",
+          "sortKeyType": "N"
+        },
+        "fastapireactDB": {}
+      }
+    }
+  }
+}
