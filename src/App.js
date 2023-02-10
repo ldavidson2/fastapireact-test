@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Login from "./Login";
+import Login from "./ui-components/Login";
 import Profile from "./Profile";
 import { RequireToken } from "./Auth";
 import Message from "./components/message";
