@@ -14,11 +14,19 @@ table = dynamodb.Table('fastapireactDB-staging')
 
 
 
-response = table.query(
-    KeyConditionExpression=Key('companyID').eq(0)
+# response = table.query(
+#     KeyConditionExpression=Key('companyID').eq(0)
+# )
+
+response = table.get_item(
+   Key={
+      'companyID': 0,
+      'userID': 1
+   }
 )
 
-data = str(response['Items'])
+data = response
+userData = str(data['Item'])
 
 app.add_middleware(
     CORSMiddleware,
@@ -30,4 +38,4 @@ app.add_middleware(
 
 @app.get("/")
 async def root():
-    return data
+    return userData
